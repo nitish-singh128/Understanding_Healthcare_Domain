@@ -148,3 +148,45 @@ When a member has multiple insurance:
 | Dental | Dental only plans | Premiums |
 | Vision | Vision only plans | Premiums |
 | Pharmacy (PBM) | Drug benefits | Premiums |
+
+## What is EDI in Healthcare: Importance and How to Implement It
+An enormous number of documents, tons of paper, and hundreds of returned claims—that’s how the healthcare industry looked before introducing electronic data interchange (EDI). Using EDI in healthcare helps medical organizations secure data exchanges, provides a quicker turnaround of information, and eliminates claim processing delays. All this makes EDI implementation a crucial part of delivering a high quality of care. EDI healthcare systems are essential for modern medical practices, ensuring efficient and secure data handling.
+
+### What is EDI in healthcare?
+Electronic data interchange in healthcare is a secure way of transmitting data between healthcare institutions, insurers, and patients using established message formats and standards. EDI transactions in healthcare facilitate seamless communication and data exchange, reducing errors and improving efficiency.
+
+**Healthcare EDI transaction types**
+In general, organizations in the healthcare industry use ten types of HIPAA electronic data interchange transactions: these EDI healthcare transactions are vital for efficient operations and accurate data management.
+
+- **Healthcare claim transaction set (837)**. It allows healthcare providers and patients to submit healthcare claim information and encounter information.
+
+- **Retail pharmacy claim transaction**. It allows healthcare professionals and regulatory agencies to submit retail pharmacy claims. It also lets them transmit claims for retail pharmacy services and billing payment information to payers.
+
+- **Healthcare claim payment/advice transaction set (835)**. It is used by insurers to make payments and send Explanation of Benefits (EOB) remittance advice to healthcare providers.
+
+- **Benefits enrollment and maintenance set (834)**. It is used by employers, unions, government agencies, insurance agencies, associations, or healthcare organizations paying claims. Its aim is to enroll members in a healthcare benefit plan. 
+
+- **Payroll deducted and other group premium payment for insurance products (820)**. This transaction serves to make premium payments for insurance products and is used by healthcare institutions to send information to financial organizations.
+
+- **Healthcare eligibility/benefit inquiry (270)**. This transaction set is used by healthcare institutions to transmit inquiries for healthcare benefits and subscriber eligibility to financial institutions and government agencies. 
+
+- **Healthcare eligibility/benefit response (271)**. Its main purpose is to respond to request inquiries about the healthcare benefits and eligibility associated with a subscriber or dependent. Like the previous transaction, it is used by healthcare institutions to transmit information to financial institutions and government agencies.
+
+- **Healthcare claim status request (276)**. This transaction is used by healthcare providers to request or verify the status of healthcare previously submitted to a payer, such as an insurance company.
+
+- **Healthcare claim status notification (277)**. It serves for reporting on the status of claims (EDI 837 transactions) previously submitted by providers. EDI 277 is used by healthcare payers and insurance companies.
+
+- **Healthcare service review Information (278)**. It is used by hospitals to request an authorization from a payer, such as an insurance company.
+
+The EDI transactions list also includes EDI Functional Acknowledgement Transaction Set (997). But it doesn’t cover any semantic meaning of the information encoded in the transaction sets. It is only necessary for X12 transaction set processing.
+
+### What does EDI mean in medical billing
+[Medical billing](https://demigos.com/blog-post/edi-in-healthcare) is a complex process due to the complexity of billing and coding and the many different parties that need to be involved. Standardization is particularly important here to avoid getting lost in a huge number of services, procedures, and diagnoses. Understanding the EDI full form in medical billing is crucial for efficient processing and compliance.
+
+Healthcare providers use an X12 HIPAA 837 Healthcare Claim to request payment from a health insurance provider. A medical billing process starts with an inquiry from the care provider and ends with a payer response. Here is how it happens:
+
+- Step 1. Inquiry. Care providers make an inquiry that includes member ID number, date of birth, and Payer ID. In most cases, it goes through a clearinghouse, an intermediary used to help reformat claims to conform to the HIPAA standard, but it can also reach a payer directly. The role of the clearinghouse is to facilitate inquiries to the payers.
+
+- Step 2. Response. When a payer receives an inquiry, they respond to the intermediary (clearinghouse), which, in turn, sends the data to the care provider’s system. If there is an error in the data, the care provider corrects it and resubmits it again to the clearinghouse. 
+
+Without the use of medical electronic data interchange, all these transactions would be much more difficult to handle because the various systems of providers and insurers would use different data formats. This was initially the case, and healthcare payment and remittance processes took weeks, especially when some errors occurred in the process. Simplifying the medical billing process is not the only positive aspect of implementing EDI. Let’s look at some other benefits an organization can expect when it uses HIPAA EDI formats.
