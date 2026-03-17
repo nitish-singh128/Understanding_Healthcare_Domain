@@ -158,11 +158,18 @@ Electronic data interchange in healthcare is a secure way of transmitting data b
 **Healthcare EDI transaction types**
 In general, organizations in the healthcare industry use ten types of HIPAA electronic data interchange transactions: these EDI healthcare transactions are vital for efficient operations and accurate data management.
 
-- **Healthcare claim transaction set (837)**. It allows healthcare providers and patients to submit healthcare claim information and encounter information.
+- **Healthcare claim transaction set (837)**. It allows healthcare providers and patients to submit healthcare claim information and encounter information to payers for reimbursement. **Types:**
+   - 837P: Professional (physicians, clinics)
+   - 837I: Institutional (hospitals)
+   - 837D: Dental
+
+  **Contents:** Patient info, provider info, diagnosis codes (ICD-10), procedure codes (CPT/HCPCS), service dates, charges, insurance info.
 
 - **Retail pharmacy claim transaction**. It allows healthcare professionals and regulatory agencies to submit retail pharmacy claims. It also lets them transmit claims for retail pharmacy services and billing payment information to payers.
 
 - **Healthcare claim payment/advice transaction set (835)**. It is used by insurers to make payments and send Explanation of Benefits (EOB) remittance advice to healthcare providers.
+
+**Contents:** Payment amount, claim status (paid, denied, adjusted), adjustment codes, check/EFT info, patient responsibility.
 
 - **Benefits enrollment and maintenance set (834)**. It is used by employers, unions, government agencies, insurance agencies, associations, or healthcare organizations paying claims. Its aim is to enroll members in a healthcare benefit plan. 
 
@@ -179,6 +186,15 @@ In general, organizations in the healthcare industry use ten types of HIPAA elec
 - **Healthcare service review Information (278)**. It is used by hospitals to request an authorization from a payer, such as an insurance company.
 
 The EDI transactions list also includes EDI Functional Acknowledgement Transaction Set (997). But it doesn’t cover any semantic meaning of the information encoded in the transaction sets. It is only necessary for X12 transaction set processing.
+
+## Summary Table
+ 
+| EDI | Direction         | Purpose                | Who Uses           |
+|-----|-------------------|------------------------|--------------------|
+| 837 | Provider → Payer  | Submit claims          | Providers          |
+| 835 | Payer → Provider  | Payment/remittance     | Payers, Providers  |
+| 270 | Provider → Payer  | Eligibility inquiry    | Providers          |
+| 271 | Payer → Provider  | Eligibility response   | Payers
 
 ### What does EDI mean in medical billing
 [Medical billing](https://demigos.com/blog-post/edi-in-healthcare) is a complex process due to the complexity of billing and coding and the many different parties that need to be involved. Standardization is particularly important here to avoid getting lost in a huge number of services, procedures, and diagnoses. Understanding the EDI full form in medical billing is crucial for efficient processing and compliance.
